@@ -1,0 +1,15 @@
+.navbar{
+    display: flex;
+    gap: 1em;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #a2d2ff;
+    padding: 1rem
+}
