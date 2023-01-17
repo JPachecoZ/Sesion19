@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductsService {
-  apiURI: string = "http://damp-spire-59848.herokuapp.com/api/products"
+  private apiURI: string = "http://damp-spire-59848.herokuapp.com/api/products"
   constructor(
     private http: HttpClient
   ) { }
