@@ -1,3 +1,13 @@
+<p class="main-title">{{ "products" | titlecase }}</p>
 <div class="container">
-  <p>{{ "products" | titlecase }}</p>
+  <div class="product-container" *ngFor="let product of products">
+    <p class="title">{{ product.title }}</p>
+    <p class="description">{{ product.description }}</p>
+    <img
+      [src]="product.images[0]"
+      alt="product image"
+      width="200"
+      [routerLink]="['/product', product.id]"
+    />
+  </div>
 </div>

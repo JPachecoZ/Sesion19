@@ -1,0 +1,18 @@
+
+.title {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    width: 75%;
+    padding: 1rem 0rem;
+    text-align: center;
+}
