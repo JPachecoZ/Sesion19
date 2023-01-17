@@ -7,16 +7,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductsService {
   apiURI: string = "http://damp-spire-59848.herokuapp.com/api/products"
-  private products: Product[] = []
   constructor(
     private http: HttpClient
   ) { }
 
   getAllProducts(){
-    return this.http.get(this.apiURI)
+    return this.http.get<Product[]>(this.apiURI)
   }
 
   getProductById(id: string){
-    return this.http.get(`${this.apiURI}/${id}`)
+    return this.http.get<Product>(`${this.apiURI}/${id}`)
   }
 }

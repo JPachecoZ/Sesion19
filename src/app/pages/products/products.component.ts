@@ -9,7 +9,7 @@ import { Product } from 'src/app/models/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit{
-  products: any = []
+  products: Product[] = []
   
   constructor(
     private productsService : ProductsService

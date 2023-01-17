@@ -9,7 +9,7 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-  currentProduct!: any
+  currentProduct!: Product
   productId: string | null = null
 
   constructor(
