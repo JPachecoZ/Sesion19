@@ -2,9 +2,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.title {
+    padding: 1rem;
     font-size: 32px;
-    font-weight: 700;
 }
